@@ -39,7 +39,8 @@ def create_graph():
     # Create empty graph
     G = nx.Graph()
 
-    ## TODO:  Update graph to new problem graph
+    G.add_edges_from([(1, 2), (1, 3), (2, 3), (3, 4), (3, 5), 
+                        (4, 5), (4, 6), (5, 6), (6, 7)])
 
     return G
 
@@ -55,7 +56,7 @@ def solve_problem(G, sampler):
         A list of nodes
     '''
 
-    ## TODO:  Update dwave-networkx function to new problem function
+    S = dnx.maximum_independent_set(G, sampler=sampler, num_reads=10)
 
     return 
 
