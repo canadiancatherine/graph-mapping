@@ -58,7 +58,7 @@ def solve_problem(G, sampler):
 
     S = dnx.maximum_independent_set(G, sampler=sampler, num_reads=10)
 
-    return 
+    return S
 
 ## ------- Main program -------
 if __name__ == "__main__":
