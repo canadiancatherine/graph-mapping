@@ -21,6 +21,8 @@ import dwave_networkx as dnx
 # Import dwave.system packages for the QPU
 from dwave.system import DWaveSampler, EmbeddingComposite
 
+from dwave.samplers import SimulatedAnnealingSampler
+
 # Import matplotlib.pyplot to draw graphs on screen
 import matplotlib
 matplotlib.use("agg")
@@ -31,7 +33,7 @@ def set_sampler():
     '''Returns a simulated annealing sampler'''
     
     ## TODO:  Import packages and add sampler here
-    sampler = EmbeddingComposite(DWaveSampler())
+    sampler = SimulatedAnnealingSampler( )
     
     return sampler 
 

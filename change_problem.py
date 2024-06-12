@@ -39,8 +39,8 @@ def create_graph():
     # Create empty graph
     G = nx.Graph()
 
-    G.add_edges_from([(1, 2), (1, 3), (2, 3), (3, 4), (3, 5), 
-                        (4, 5), (4, 6), (5, 6), (6, 7)])
+    G.add_edges_from([(1, 2), (1, 4), (1, 0), (5, 4), (2, 5), 
+                        (2, 3), (3, 6), (6, 7), (5, 6)])
 
     return G
 
